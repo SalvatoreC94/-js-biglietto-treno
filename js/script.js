@@ -4,10 +4,10 @@ document.getElementById('bigliettoForm').onsubmit = function (event) {
 };
 
 function calcolaPrezzo() {
-    var percorrenza = parseInt(document.getElementById('chilometri').value);
-    var eta = parseInt(document.getElementById('eta').value);
-    var prezzoAlKilometro = 0.21;
-    var prezzoBiglietto = prezzoAlKilometro * percorrenza;
+    const percorrenza = parseInt(document.getElementById('chilometri').value);
+    const eta = parseInt(document.getElementById('eta').value);
+    const prezzoAlKilometro = 0.21;
+    const prezzoBiglietto = prezzoAlKilometro * percorrenza;
 
     if (eta <= 18) {
         prezzoBiglietto *= 0.80; // 20% di sconto
